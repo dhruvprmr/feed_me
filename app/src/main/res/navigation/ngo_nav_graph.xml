@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ngo_nav_graph"
+    app:startDestination="@id/fragment_Home_Page_NGO">
+    <fragment
+        android:id="@+id/fragment_Home_Page_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Home_Page_NGO"
+        android:label="fragment__home__page__n_g_o"
+        tools:layout="@layout/fragment__home__page__n_g_o" />
+    <fragment
+        android:id="@+id/fragment_Profile_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Profile_NGO"
+        android:label="Fragment_Profile_NGO"
+        tools:layout="@layout/fragment__profile__n_g_o">
+        <action
+            android:id="@+id/action_fragment_Profile_NGO_to_fragment_Edit_Profile_NGO"
+            app:destination="@id/fragment_Edit_Profile_NGO" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Settings_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Settings_NGO"
+        android:label="fragment__settings__n_g_o"
+        tools:layout="@layout/fragment__settings__n_g_o" >
+        <action
+            android:id="@+id/action_fragment_Settings_NGO_to_fragment_Change_Password_NGO"
+            app:destination="@id/fragment_Change_Password_NGO" />
+        <action
+            android:id="@+id/action_fragment_Settings_NGO_to_fragment_AboutUs_NGO"
+            app:destination="@id/fragment_AboutUs_NGO" />
+        <action
+            android:id="@+id/action_fragment_Settings_NGO_to_fragment_ContactUs_NGO"
+            app:destination="@id/fragment_ContactUs_NGO" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_AboutUs_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_AboutUs_NGO"
+        android:label="Fragment_AboutUs_NGO"
+        tools:layout="@layout/fragment__about_us__n_g_o"/>
+    <fragment
+        android:id="@+id/fragment_Edit_Profile_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Edit_Profile_NGO"
+        android:label="Fragment_Edit_Profile_NGO"
+        tools:layout="@layout/fragment__edit__profile__n_g_o"/>
+    <fragment
+        android:id="@+id/fragment_Nearby_Volunteers_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Nearby_Volunteers_NGO"
+        android:label="fragment__nearby__volunteers__n_g_o"
+        tools:layout="@layout/fragment__nearby__volunteers__n_g_o" />
+    <fragment
+        android:id="@+id/fragment_Add_Donation_Spots_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Add_Donation_Spots_NGO"
+        android:label="fragment__add__donation__spots__n_g_o"
+        tools:layout="@layout/fragment__add__donation__spots__n_g_o" />
+    <fragment
+        android:id="@+id/fragment_Change_Password_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Change_Password_NGO"
+        tools:layout="@layout/fragment__change__password__n_g_o"
+        android:label="Fragment_Change_Password_NGO" />
+    <fragment
+        android:id="@+id/fragment_ContactUs_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_ContactUs_NGO"
+        tools:layout="@layout/fragment__contact_us__n_g_o"
+        android:label="Fragment_ContactUs_NGO" />
+    <fragment
+        android:id="@+id/fragment_Donation_Request_NGO"
+        android:name="com.dca.feed_me.NGO.Fragment_Donation_Request_NGO"
+        android:label="fragment__donation__request__n_g_o"
+        tools:layout="@layout/fragment__donation__request__n_g_o" />
+</navigation>

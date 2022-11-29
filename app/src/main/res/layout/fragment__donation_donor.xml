@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Donor.Fragment_Donation_donor">
+
+    <include layout="@layout/app_bar_layout"/>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donate Food Details"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="20sp"
+            android:textColor="@color/green_500"
+            />
+
+        <EditText
+            android:id="@+id/donate_name_donor"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"
+            android:drawableStart="@drawable/username"
+            android:drawableTint="@color/green_500"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:hint="Enter your name"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/donate_phone_donor"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawableTint="@color/green_500"
+            android:drawablePadding="15dp"
+            android:singleLine="true"
+            android:paddingLeft="15dp"
+            android:hint="Enter your phone"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/donate_place_donor"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"
+            android:drawableStart="@drawable/spots"
+            android:drawableTint="@color/green_500"
+            android:drawablePadding="15dp"
+            android:singleLine="true"
+            android:paddingLeft="15dp"
+            android:hint="Pick up place"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/items_donor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_fastfood_24"
+            android:drawableTint="@color/green_500"
+            android:drawablePadding="15dp"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:hint="Food items"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/quantity_donor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableTint="@color/green_500"
+            android:drawablePadding="15dp"
+            android:singleLine="true"
+            android:paddingStart="15dp"
+            android:hint="Quantity"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/cook_time_donor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:drawableTint="@color/green_500"
+            android:paddingStart="15dp"
+            android:drawablePadding="15dp"
+            android:hint="When it was cooked?"
+            android:singleLine="true"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="15sp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I assure that food quality and hygiene maintained"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="12sp"
+            android:checked="true"
+            android:buttonTint="@color/green_500"/>
+
+        <Button
+            android:id="@+id/donate_button_donor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_login_bg"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Donate Now"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F1F1F1">
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                android:orientation="vertical"
+                                android:paddingBottom="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt_profile_volunteer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:drawableStart="@drawable/ic_person"
+                                        android:drawableEnd="@drawable/right_arrow"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/quicksand_medium"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="Profile"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/black" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt_change_password_volunteer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:drawableStart="@drawable/ic_lock"
+                                        android:drawableEnd="@drawable/right_arrow"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/quicksand_medium"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="Change Password"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/black" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:drawableStart="@drawable/ic_about_us"
+                                        android:id="@+id/txt_About_Us_volunteer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:drawableEnd="@drawable/right_arrow"
+                                        android:layout_toRightOf="@+id/iv_about"
+                                        android:paddingLeft="2dp"
+                                        android:drawablePadding="10dp"
+                                        android:drawableTint="@color/black"
+                                        android:fontFamily="@font/quicksand_medium"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="About Us"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/black" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txt_Contact_us_volunteer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:drawableStart="@drawable/ic_lock"
+                                        android:drawableEnd="@drawable/right_arrow"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/quicksand_medium"
+                                        android:paddingTop="10dp"
+                                        android:paddingBottom="10dp"
+                                        android:text="Contact Us"
+                                        android:textColor="@color/black"
+                                        android:textSize="15dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

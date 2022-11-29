@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/logo"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed Me"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/green_500"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Food Donation App"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/green_200"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

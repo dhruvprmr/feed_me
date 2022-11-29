@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_main_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/green_700"
+                android:text="Contact Us"/>
+
+            <EditText
+                android:id="@+id/contactUs_name_volunteer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="15dp"
+                android:hint="Enter Your Name"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableTint="@color/black"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/edit_text_bg"/>
+
+            <EditText
+                android:id="@+id/contactUs_email_volunteer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your Email"
+                android:singleLine="true"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableTint="@color/black"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/edit_text_bg"/>
+
+            <EditText
+                android:id="@+id/contactUs_phone_volunteer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Your Phone"
+                android:textSize="15sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableTint="@color/black"
+                android:inputType="number"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/edit_text_bg"/>
+
+            <EditText
+                android:id="@+id/contactUs_message_volunteer"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:hint="Write Your Message"
+                android:textSize="15sp"
+                android:lines="3"
+                android:fontFamily="@font/quicksand_medium"
+                android:drawableStart="@drawable/ic_baseline_message_24"
+                android:drawableTint="@color/black"
+                android:inputType="textPersonName"
+                android:drawablePadding="15dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/edit_text_bg"/>
+
+            <Button
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:id="@+id/send_contactUs_volunteer"
+                android:text="Send"/>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

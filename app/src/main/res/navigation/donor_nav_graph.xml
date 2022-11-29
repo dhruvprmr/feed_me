@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/donor_nav_graph"
+    app:startDestination="@id/fragment_Home_Page_Donor">
+
+    <fragment
+        android:id="@+id/fragment_Home_Page_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Home_Page_Donor"
+        android:label="fragment__home__page__donor"
+        tools:layout="@layout/fragment__home__page__donor" />
+    <fragment
+        android:id="@+id/fragment_Profile_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Profile_Donor"
+        android:label="fragment__profile__donor"
+        tools:layout="@layout/fragment__profile__donor" >
+        <action
+            android:id="@+id/action_fragment_Profile_Donor_to_fragment_Edit_Profile_Donor"
+            app:destination="@id/fragment_Edit_Profile_Donor" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Settings_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Settings_Donor"
+        android:label="fragment__settings__donor"
+        tools:layout="@layout/fragment__settings__donor" />
+    <fragment
+        android:id="@+id/fragment_ContactUs_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_ContactUs_Donor"
+        android:label="fragment__contact_us__donor"
+        tools:layout="@layout/fragment__contact_us__donor" />
+    <fragment
+        android:id="@+id/fragment_Reset_Password_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Reset_Password_Donor"
+        android:label="fragment__reset__password__donor"
+        tools:layout="@layout/fragment__reset__password__donor" />
+    <fragment
+        android:id="@+id/fragment_Edit_Profile_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Edit_Profile_Donor"
+        android:label="fragment__edit__profile__donor"
+        tools:layout="@layout/fragment__edit__profile__donor" />
+    <fragment
+        android:id="@+id/fragment_AboutUs_Donor"
+        android:name="com.dca.feed_me.Donor.Fragment_AboutUs_Donor"
+        android:label="fragment__about_us__donor"
+        tools:layout="@layout/fragment__about_us__donor" />
+    <fragment
+        android:id="@+id/fragment_Spots_donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Spots_donor"
+        android:label="fragment__spots_donor"
+        tools:layout="@layout/fragment__spots_donor" />
+    <fragment
+        android:id="@+id/fragment_Donation_donor"
+        android:name="com.dca.feed_me.Donor.Fragment_Donation_donor"
+        android:label="fragment__donation_donor"
+        tools:layout="@layout/fragment__donation_donor" />
+</navigation>

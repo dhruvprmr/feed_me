@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_main_launcher"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="23sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/green_700"
+                android:text="Feed Me"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="10dp"
+                android:text="A Food Donation Management System"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/green_700"
+                android:layout_marginTop="10dp"
+                android:text="TOGETHER WE CAN END HUNGER!"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="10dp"
+                android:text="Feed me is the charity app that allows you to feed a hungry child with a tap on your phone. As the world faces a record number of emergencies, the rate of hunger is increasing."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/green_700"
+                android:layout_marginTop="10dp"
+                android:text="Our Mission"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="10dp"
+                android:text="Many people face starving because of food shortage. The people most affected are smallholder. There are several ways and means to help the needy but nothing works better than making a contribution to an organization dedicated to helping poor communities to battle against poverty. People living in NGO also faces food shortage issues. This application can help needy people to eat food. With help of this application restaurant can serve food to many people. NGO’s can also contact restaurants for providing food in shortage of food. This can feed many poor and needy people."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/green_700"
+                android:layout_marginTop="10dp"
+                android:text="Developed By"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:fontFamily="@font/quicksand_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Aksha Shelat &amp; his Team"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

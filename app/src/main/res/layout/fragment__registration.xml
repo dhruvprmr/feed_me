@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/register_now_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center"
+                android:text="Register Now"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/quicksand"
+                android:gravity="center"
+                android:text="Please Enter Your Details"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/register_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_background"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <!--Donor Layout Code-->
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_register_name_donor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_role"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/green_500"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="Enter your name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edt_register_username_donor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/green_500"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="Enter your username"
+                android:inputType="text"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/edt_register_phone_donor"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your Phone"
+                            android:inputType="number"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/edt_register_email_donor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:background="@drawable/edit_text_bg"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/green_500"
+                android:fontFamily="@font/quicksand_medium"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_password_layout_donor"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/green_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_register_password_donor"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/edit_text_bg"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/green_500"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:singleLine="true"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register_donor"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/green_500"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="Register"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+                <!--NGO Layout-->
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_register_name_ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_role"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your Organization Name"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+
+
+                        <EditText
+                            android:id="@+id/edt_register_username_ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_person"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your username"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/edt_register_phone_ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your phone number"
+                            android:inputType="number"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/edt_register_email_ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/edit_text_bg"
+                            android:visibility="gone"
+                            android:drawableStart="@drawable/ic_email"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your email"
+                            android:inputType="textEmailAddress"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_password_layout_ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone"
+                            app:boxBackgroundMode="none"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/green_500">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_register_password_ngo"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/edit_text_bg"
+                                android:drawableStart="@drawable/ic_lock"
+                                android:drawablePadding="10dp"
+                                android:visibility="gone"
+                                android:drawableTint="@color/green_500"
+                                android:fontFamily="@font/quicksand_medium"
+                                android:singleLine="true"
+                                android:hint="Enter your password"
+                                android:inputType="textPassword"
+                                android:padding="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_register_ngo"
+                            android:layout_width="250dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:backgroundTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:gravity="center"
+                            android:text="Register"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"/>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+                <!--Volunteer Layout-->
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edt_register_name_volunteer"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_role"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your Name"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+
+
+                        <EditText
+                            android:id="@+id/edt_register_username_volunteer"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_person"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your username"
+                            android:inputType="text"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/edt_register_phone_volunteer"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_phone"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your phone number"
+                            android:inputType="number"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <EditText
+                            android:id="@+id/edt_register_email_volunteer"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_text_bg"
+                            android:drawableStart="@drawable/ic_email"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:hint="Enter your email"
+                            android:inputType="textEmailAddress"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="15dp" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/register_password_layout_volunteer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            app:boxBackgroundMode="none"
+                            app:hintEnabled="false"
+                            app:passwordToggleEnabled="true"
+                            app:passwordToggleTint="@color/green_500">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_register_password_volunteer"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:visibility="gone"
+                                android:background="@drawable/edit_text_bg"
+                                android:drawableStart="@drawable/ic_lock"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/green_500"
+                                android:fontFamily="@font/quicksand_medium"
+                                android:singleLine="true"
+                                android:hint="Enter your password"
+                                android:inputType="textPassword"
+                                android:padding="15dp"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_register_volunteer"
+                            android:layout_width="250dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:backgroundTint="@color/green_500"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:gravity="center"
+                            android:text="Register"
+                            android:textSize="15dp"
+                            android:layout_marginTop="15dp"/>
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_create_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Already Have Account ?"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_register_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/txt_create_account"
+                android:fontFamily="@font/quicksand_bold"
+                android:paddingLeft="10dp"
+                android:text="Sign In"
+                android:textColor="@color/green_500"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

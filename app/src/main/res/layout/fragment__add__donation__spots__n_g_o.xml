@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NGO.Fragment_Add_Donation_Spots_NGO">
+
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/donation_spot_name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:hint="Enter place name"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_marginTop="20dp"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/donation_spot_address"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:hint="Enter location"
+            android:paddingRight="15dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/donation_spot_pin"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Enter pincode"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"/>
+
+        <EditText
+            android:id="@+id/donation_spot_landmark"
+            android:inputType="textPersonName"
+            android:background="@drawable/edit_text_bg"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Enter landmark"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="48dp"/>
+        
+        <Button
+            android:id="@+id/save_location"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Save Location"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:background="@drawable/button_login_bg"
+            />
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

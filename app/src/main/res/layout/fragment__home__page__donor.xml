@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/about_separator_color"
+    tools:context=".Donor.Fragment_Home_Page_Donor">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/home_page_card_view_donor">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green_500"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="NGO Near You"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/recycler_view"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

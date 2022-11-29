@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_layout"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/edit_profile"/>
+
+            <EditText
+                android:id="@+id/edit_profile_name_volunteer"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter Your Name"
+                android:singleLine="true"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <EditText
+                android:id="@+id/edit_profile_phone_volunteer"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:singleLine="true"
+                android:hint="Enter Your Phone"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <EditText
+                android:id="@+id/edit_profile_email_volunteer"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter Your Email"
+                android:paddingStart="15dp"
+                android:singleLine="true"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+            <EditText
+                android:id="@+id/edit_profile_username_volunteer"
+                android:fontFamily="@font/quicksand_medium"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:hint="Enter Your Username"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:drawableStart="@drawable/username"
+                android:drawableTint="@color/black"
+                android:drawablePadding="15dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+            <Button
+                android:id="@+id/update_profile_volunteer"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_login_bg"
+                android:textSize="16sp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Update Profile"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

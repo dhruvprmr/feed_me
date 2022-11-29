@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_activity_nav_graph"
+    app:startDestination="@id/fragment_Login">
+    <fragment
+        android:id="@+id/fragment_Registration"
+        android:name="com.dca.feed_me.Login.Fragment_Registration"
+        android:label="fragment__registration"
+        tools:layout="@layout/fragment__registration" />
+    <fragment
+        android:id="@+id/fragment_Login"
+        android:name="com.dca.feed_me.Login.Fragment_Login"
+        android:label="fragment__login"
+        tools:layout="@layout/fragment__login" />
+    <fragment
+        android:id="@+id/fragment_Forget_Password"
+        android:name="com.dca.feed_me.Login.Fragment_Forget_Password"
+        android:label="fragment__forget__password"
+        tools:layout="@layout/fragment__forget__password" />
+</navigation>

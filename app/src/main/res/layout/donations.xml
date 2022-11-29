@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donation_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:id="@+id/details_list_card_view"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#F8F7F7"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_donation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="17dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/user_details_bg"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Phone: "
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Items: "
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Place: "
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Quantity: "
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:text="Time: "
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_phone_donation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:text="Phone"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_items"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Items"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Place"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/quicksand_medium"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/donation_accept"
+                                android:layout_width="30dp"
+                                android:layout_gravity="center"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/accept" />
+
+                        <ImageView
+                            android:id="@+id/donation_reject"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@id/donation_accept"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/reject"/>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/volunteer_nav_graph"
+    app:startDestination="@id/fragment_Home_Page_Volunteer">
+
+    <fragment
+        android:id="@+id/fragment_Home_Page_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Home_Page_Volunteer"
+        android:label="fragment__home__page__volunteer"
+        tools:layout="@layout/fragment__home__page__volunteer" />
+    <fragment
+        android:id="@+id/fragment_Settings_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Settings_Volunteer"
+        android:label="Fragment_Settings_Volunteer"
+        tools:layout="@layout/fragment__settings__volunteer">
+        <action
+            android:id="@+id/action_fragment_Settings_Volunteer_to_fragment_AboutUs_Volunteer"
+            app:destination="@id/fragment_AboutUs_Volunteer" />
+        <action
+            android:id="@+id/action_fragment_Settings_Volunteer_to_fragment_Change_Password_Volunteer"
+            app:destination="@id/fragment_Change_Password_Volunteer" />
+        <action
+            android:id="@+id/action_fragment_Settings_Volunteer_to_fragment_ContactUs_Volunteer"
+            app:destination="@id/fragment_ContactUs_Volunteer" />
+        <action
+            android:id="@+id/action_fragment_Settings_Volunteer_to_fragment_Profile_Volunteer"
+            app:destination="@id/fragment_Profile_Volunteer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Change_Password_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Change_Password_Volunteer"
+        android:label="fragment__change__password__volunteer"
+        tools:layout="@layout/fragment__change__password__volunteer" />
+    <fragment
+        android:id="@+id/fragment_AboutUs_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_AboutUs_Volunteer"
+        android:label="fragment__about_us__volunteer"
+        tools:layout="@layout/fragment__about_us__volunteer" />
+    <fragment
+        android:id="@+id/fragment_ContactUs_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_ContactUs_Volunteer"
+        android:label="fragment__contact_us__volunteer"
+        tools:layout="@layout/fragment__contact_us__volunteer" />
+    <fragment
+        android:id="@+id/fragment_Profile_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Profile_Volunteer"
+        android:label="fragment__profile__volunteer"
+        tools:layout="@layout/fragment__profile__volunteer" >
+        <action
+            android:id="@+id/action_fragment_Profile_Volunteer_to_fragment_Edit_Profile_Volunteer"
+            app:destination="@id/fragment_Edit_Profile_Volunteer" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Edit_Profile_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Edit_Profile_Volunteer"
+        android:label="fragment__edit__profile__volunteer"
+        tools:layout="@layout/fragment__edit__profile__volunteer" />
+    <fragment
+        android:id="@+id/fragment_Donation_Request_Volunteer"
+        android:name="com.dca.feed_me.Volunteer.Fragment_Donation_Request_Volunteer"
+        android:label="fragment__donation__request__volunteer"
+        tools:layout="@layout/fragment__donation__request__volunteer" />
+</navigation>
